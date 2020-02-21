@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Testing the Booking Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+
+<body>
+
+<!-- Testing the New implementation -->
+   	<!-- Smart button testing (don't forget to check BO settings first) -->
+	<div data-tiqets-widget="booking"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/134.js"></script>
+
+
+	<!-- Testing a UI Element button -->
+		<!-- First, the button in the element that we will target (already on the venue website) -->
+  		<a href="#" id="wacdomkpxvwoudnpnoqcqzarvgwlsncdjxey">Buy Tickets (1 cent product)</a>
+		<!-- Then, our snippet code -->
+		<div data-tiqets-widget="booking"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/1058.js"></script>
+
+
+	<!-- Testing a UI Element button with trigger element in HTML -->
+		<!-- First, the button in the element that we will target (already on the venue website) -->
+		<a href="#" id="buy-my-tiqets">Buy Tickets (Gugghenheim)</a>
+		<!-- Then, our snippet code -->
+		<div data-tiqets-widget="booking" data-trigger-selector="#buy-my-tiqets"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/1.js"></script>
+
+
+
+<!-- Old implementation  -->
+	<!-- Testing a Smart button -->
+	<!-- Our snippet code -->
+	<div data-tiqets-widget="booking" 
+	data-product-id="979920"
+	data-partner="daliparis"
+	data-currency=""
+	data-tq-campaign="" 
+	data-use-smart-button="true"
+	data-smart-button-alignment="center"
+	data-blacklisted-languages="en"
+	data-whitelisted-languages="fr, nl, es, pt, it, po, de, ja, ko, ru"
+	data-z-index="100000"></div>
+	<script defer src="https://widgets.tiqets.com/loader.js"></script>
+
+
+	<!-- Testing a UI Element button -->
+	<!-- First, the button in the element that we will target (already on the venue website) -->
+	<a href="#" class="tiqets-button-footer">Buy Tickets (9/11)</a>
+	<!-- Then, our snippet code -->
+    <div data-tiqets-widget="booking" 
+	data-product-id="979920"
+	data-partner="911memorial"
+	data-currency=""
+	data-tq-campaign="" 
+	data-use-smart-button="false"
+	data-blacklisted-languages="en,nl"
+	data-whitelisted-languages="fr, nl, es, pt, it, po, de, ja, ko, ru" 
+	data-trigger-selector=".tiqets-button-footer"
+	data-z-index="1000000"></div>
+    <script defer src="https://widgets.tiqets.com/loader.js"></script>
+
+
+	<style>
+		a {
+			text-decoration: none;
+			color:#47C4C6;
+			font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+			font-size: 1.5rem;
+			padding: 2rem !important;
+		}
+		body {
+			line-height: 3;
+		}
+	</style>
+</body>
+</html>
