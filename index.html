@@ -11,19 +11,19 @@
 <body>
 
 <!-- Testing the New implementation -->
-   	<!-- Smart button testing (don't forget to check BO settings first) -->
+   	<!-- Smart button testing (don't forget to check BO entity settings first) -->
 	<div data-tiqets-widget="booking"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/134.js"></script>
 
 
 	<!-- Testing a UI Element button -->
-		<!-- First, the button in the element that we will target (already on the venue website) -->
+		<!-- First, the button that we will target (already on the venue website) - the ID or class must be the same than the one in BO -->
   		<a href="#" id="wacdomkpxvwoudnpnoqcqzarvgwlsncdjxey">Buy Tickets (1 cent product)</a>
-		<!-- Then, our snippet code -->
+		<!-- Then, our snippet code (check the BO entity to make sure everything is correct) -->
 		<div data-tiqets-widget="booking"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/1058.js"></script>
 
 
 	<!-- Testing a UI Element button with trigger element in HTML -->
-		<!-- First, the button in the element that we will target (already on the venue website) -->
+		<!-- First, the button that we will target (already on the venue website, copy paste from their source code) -->
 		<a href="#" id="buy-my-tiqets">Buy Tickets (Gugghenheim)</a>
 		<!-- Then, our snippet code -->
 		<div data-tiqets-widget="booking" data-trigger-selector="#buy-my-tiqets"></div><script src="https://tiqets-cdn.s3.amazonaws.com/booking_engine/loader/1.js"></script>
@@ -61,7 +61,6 @@
 	data-trigger-selector=".tiqets-button-footer"
 	data-z-index="1000000"></div>
     <script defer src="https://widgets.tiqets.com/loader.js"></script>
-
 
 	<style>
 		a {
