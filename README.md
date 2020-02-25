@@ -2,7 +2,7 @@
 A template folder to set up your testing environment locally and make sure a Booking Engine is working before sending the code to a partner.
 
 ### Pre-requisites
- 1. Download [VS code](code.visualstudio.com/download) 
+ 1. Download [VS code](https://code.visualstudio.com/download) 
  2. Download this folder as a zip [(link)](https://github.com/tiqets-for-venues/local-testing/archive/master.zip)
  3. Double click on the zip to open
  4. Make sure to move this zip in a new folder on your laptop and rename it as you please (/Desktop/BE-Code)
